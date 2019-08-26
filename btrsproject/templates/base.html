@@ -19,10 +19,22 @@
     <title>BT Real Estate</title>
 </head>
 <body>
+    <!-- here, we added top bar and nav bar and footer but the base template looks so flooded with so may elements of different categories. 
+    So mke our code clean we gonna use the concepts of partials -->
+    <!-- topbar -->
+    <!-- Now lets include topbar , navbar and footer template to this file -->
+    {% include 'partials/_topbar.html' %}
+    <!-- Navbar -->
+    {% include 'partials/_navbar.html' %}
     {% block content %}
     {% endblock %}
+
+    <!-- Footer -->
+    {% include 'partials/_footer.html' %}
+ 
     <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
     <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/lightbox.min.js' %}"></script>
     <script src="{% static 'js/main.js' %}"></script>
 </body>
 </html>
