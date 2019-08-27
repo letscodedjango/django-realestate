@@ -22,7 +22,7 @@ from realtors import urls
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('pages.urls')),
-    path('', include('listings.urls')),
-    path('', include('realtors.urls')),
+    path('listings/', include('listings.urls')),
+    path('realtors/', include('realtors.urls')),
 
 ]
